@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Juan Francisco Chanatasig · CV</title>
+    <meta name="description" content="CV de Juan Francisco Chanatasig Garzón, estudiante de Ingeniería en Software (EPN) orientado al desarrollo web full-stack. Disponible para pasantías.">
+    <meta name="author" content="Juan Francisco Chanatasig Garzón">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#e9edf1">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' shape-rendering='crispEdges'%3E%3Cpath fill='%233f5d7d' d='M1 0h10v1h1v10h-1v1H1v-1H0V1h1z'/%3E%3Cpath fill='%23f4f6f8' d='M3 3h2v5H3zM2 7h1v1H2zM7 3h3v1H7zM6 4h1v3H6zM7 7h3v1H7z'/%3E%3C/svg%3E">
+
+    <!-- Tipografías: pixeladas para la interfaz y sans-serif legible para el contenido -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Press+Start+2P&family=VT323&display=swap">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Se carga en <head> (sin defer) para aplicar el tema guardado antes del primer pintado y evitar parpadeos -->
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <!-- ===== Sprite de iconos pixel art (cuadrícula 12×12) ===== -->
+    <svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <symbol id="i-mail" viewBox="0 0 12 12"><path d="M1 2h10v1H1zM1 9h10v1H1zM1 3h1v6H1zM10 3h1v6h-1zM2 3h1v1H2zM9 3h1v1H9zM3 4h1v1H3zM8 4h1v1H8zM4 5h1v1H4zM7 5h1v1H7zM5 6h2v1H5z"/></symbol>
+        <symbol id="i-phone" viewBox="0 0 12 12"><path d="M3 0h6v1H3zM3 11h6v1H3zM3 1h1v10H3zM8 1h1v10H8zM4 8h4v1H4zM5 9h2v1H5z"/></symbol>
+        <symbol id="i-pin" viewBox="0 0 12 12"><path d="M4 0h4v1H4zM3 1h6v1H3zM2 2h3v2H2zM7 2h3v2H7zM2 4h8v1H2zM3 5h6v1H3zM4 6h4v2H4zM5 8h2v2H5z"/></symbol>
+        <symbol id="i-linkedin" viewBox="0 0 12 12"><path fill-rule="evenodd" d="M2 1h8v1h1v8h-1v1H2v-1H1V2h1zM3 3h1v1H3zM3 5h1v4H3zM5 5h1v4H5zM6 5h2v1H6zM8 6h1v3H8z"/></symbol>
+        <symbol id="i-github" viewBox="0 0 12 12"><path fill-rule="evenodd" d="M4 0h4v1h2v1h1v2h1v4h-1v2h-1v1H8v1H4v-1H2v-1H1V8H0V4h1V2h1V1h2zM3 2h1v1H3zM8 2h1v1H8zM3 3h6v3H3zM4 6h4v1H4zM5 7h2v4H5zM2 7h1v1H2zM3 8h2v1H3z"/></symbol>
+        <symbol id="i-external" viewBox="0 0 12 12"><path d="M1 3h4v1H1zM1 4h1v7H1zM2 10h7v1H2zM8 7h1v3H8zM7 1h4v1H7zM10 2h1v3h-1zM9 2h1v1H9zM8 3h1v1H8zM7 4h1v1H7zM6 5h1v1H6zM5 6h1v1H5z"/></symbol>
+        <symbol id="i-download" viewBox="0 0 12 12"><path d="M5 0h2v4H5zM2 4h8v1H2zM3 5h6v1H3zM4 6h4v1H4zM5 7h2v1H5zM0 9h1v2H0zM11 9h1v2h-1zM0 11h12v1H0z"/></symbol>
+        <symbol id="i-sun" viewBox="0 0 12 12"><path d="M5 3h2v1h1v1h1v2H8v1H7v1H5V8H4V7H3V5h1V4h1zM5 0h2v2H5zM5 10h2v2H5zM0 5h2v2H0zM10 5h2v2h-2zM1 1h2v2H1zM9 1h2v2H9zM1 9h2v2H1zM9 9h2v2H9z"/></symbol>
+        <symbol id="i-moon" viewBox="0 0 12 12"><path d="M4 0h3v1H4zM2 1h4v1H2zM1 2h4v1H1zM1 3h3v1H1zM0 4h4v3H0zM0 7h5v1H0zM10 7h1v1h-1zM1 8h6v1H1zM9 8h2v1H9zM1 9h10v1H1zM2 10h8v1H2zM4 11h4v1H4z"/></symbol>
+        <symbol id="i-menu" viewBox="0 0 12 12"><path d="M1 2h10v2H1zM1 5h10v2H1zM1 8h10v2H1z"/></symbol>
+        <symbol id="i-close" viewBox="0 0 12 12"><path d="M1 1h2v1H1zM9 1h2v1H9zM2 2h2v1H2zM8 2h2v1H8zM3 3h2v1H3zM7 3h2v1H7zM4 4h4v1H4zM5 5h2v2H5zM4 7h4v1H4zM3 8h2v1H3zM7 8h2v1H7zM2 9h2v1H2zM8 9h2v1H8zM1 10h2v1H1zM9 10h2v1H9z"/></symbol>
+        <symbol id="i-arrow-up" viewBox="0 0 12 12"><path d="M5 1h2v1H5zM4 2h4v1H4zM3 3h6v1H3zM2 4h8v1H2zM5 5h2v6H5z"/></symbol>
+        <symbol id="i-help" viewBox="0 0 12 12"><path d="M3 1h6v1H3zM2 2h2v2H2zM8 2h2v3H8zM6 5h2v1H6zM5 6h2v2H5zM5 9h2v2H5z"/></symbol>
+        <symbol id="i-copy" viewBox="0 0 12 12"><path d="M0 0h8v1H0zM0 1h1v7H0zM7 1h1v3H7zM1 7h3v1H1zM4 4h8v1H4zM4 11h8v1H4zM4 5h1v6H4zM11 5h1v6h-1z"/></symbol>
+        <symbol id="i-check" viewBox="0 0 12 12"><path d="M10 2h2v1h-2zM9 3h2v1H9zM8 4h2v1H8zM1 5h2v1H1zM7 5h2v1H7zM2 6h2v1H2zM6 6h2v1H6zM3 7h4v1H3zM4 8h2v1H4z"/></symbol>
+        <symbol id="i-warning" viewBox="0 0 12 12"><path fill-rule="evenodd" d="M5 0h2v2h1v2h1v2h1v2h1v2h1v2H0v-2h1V8h1V6h1V4h1V2h1zM5 4h2v4H5zM5 9h2v2H5z"/></symbol>
+        <symbol id="i-user" viewBox="0 0 12 12"><path d="M4 1h4v1h1v3H8v1H4V5H3V2h1zM3 7h6v1h1v1h1v2H1V9h1V8h1z"/></symbol>
+        <symbol id="i-star" viewBox="0 0 12 12"><path d="M5 0h2v2H5zM4 2h4v1H4zM0 3h12v1H0zM1 4h10v1H1zM2 5h8v1H2zM3 6h6v2H3zM2 8h3v1H2zM7 8h3v1H7zM2 9h2v1H2zM8 9h2v1H8zM1 10h2v1H1zM9 10h2v1H9z"/></symbol>
+        <symbol id="i-folder" viewBox="0 0 12 12"><path fill-rule="evenodd" d="M0 1h5v1h1v1h6v8H0zM1 4h10v1H1z"/></symbol>
+        <symbol id="i-cap" viewBox="0 0 12 12"><path d="M5 0h2v1H5zM3 1h6v1H3zM1 2h10v1H1zM0 3h12v1H0zM1 4h10v1H1zM3 5h6v1H3zM3 7h6v3H3zM11 4h1v4h-1zM10 8h2v1h-2z"/></symbol>
+        <symbol id="i-globe" viewBox="0 0 12 12"><path d="M4 0h4v1H4zM2 1h2v1H2zM8 1h2v1H8zM1 2h1v2H1zM10 2h1v2h-1zM0 4h1v4H0zM11 4h1v4h-1zM1 8h1v2H1zM10 8h1v2h-1zM2 10h2v1H2zM8 10h2v1H8zM4 11h4v1H4zM4 1h1v2H4zM7 1h1v2H7zM3 3h1v6H3zM8 3h1v6H8zM4 9h1v2H4zM7 9h1v2H7zM1 4h10v1H1zM1 7h10v1H1z"/></symbol>
+        <symbol id="i-monitor" viewBox="0 0 12 12"><path fill-rule="evenodd" d="M0 1h12v3H0zM2 2h1v1H2zM4 2h1v1H4zM0 4h1v6H0zM11 4h1v6h-1zM0 10h12v1H0zM2 6h5v1H2zM2 8h7v1H2z"/></symbol>
+        <symbol id="i-server" viewBox="0 0 12 12"><path fill-rule="evenodd" d="M0 1h12v4H0zM2 2h2v2H2zM6 3h4v1H6zM0 6h12v4H0zM2 7h2v2H2zM6 8h4v1H6zM5 10h2v1H5zM2 11h8v1H2z"/></symbol>
+        <symbol id="i-database" viewBox="0 0 12 12"><path fill-rule="evenodd" d="M3 0h6v1h2v10h-2v1H3v-1H1V1h2zM2 3h1v1H2zM3 4h6v1H3zM9 3h1v1H9zM2 7h1v1H2zM3 8h6v1H3zM9 7h1v1H9z"/></symbol>
+        <symbol id="i-branch" viewBox="0 0 12 12"><path d="M1 0h3v3H1zM2 3h1v6H2zM1 9h3v3H1zM8 2h3v3H8zM9 5h1v2H9zM3 7h7v1H3z"/></symbol>
+        <symbol id="i-people" viewBox="0 0 12 12"><path d="M1 1h3v3H1zM1 5h3v1h1v3H0V6h1zM8 1h3v3H8zM8 5h3v1h1v3H7V6h1z"/></symbol>
+        <symbol id="i-code" viewBox="0 0 12 12"><path d="M2 3h1v1H2zM1 4h1v1H1zM0 5h1v2H0zM1 7h1v1H1zM2 8h1v1H2zM9 3h1v1H9zM10 4h1v1h-1zM11 5h1v2h-1zM10 7h1v1h-1zM9 8h1v1H9zM7 2h1v2H7zM6 4h1v2H6zM5 6h1v2H5zM4 8h1v2H4z"/></symbol>
+        <symbol id="i-cube" viewBox="0 0 12 12"><path d="M0 4h8v1H0zM0 11h8v1H0zM0 5h1v6H0zM7 5h1v6H7zM4 0h8v1H4zM11 1h1v7h-1zM1 3h1v1H1zM2 2h1v1H2zM3 1h1v1H3zM8 3h1v1H8zM9 2h1v1H9zM10 1h1v1h-1zM8 10h1v1H8zM9 9h1v1H9zM10 8h1v1h-1z"/></symbol>
+        <symbol id="i-heart" viewBox="0 0 12 12"><path d="M1 2h4v1H1zM7 2h4v1H7zM0 3h12v3H0zM1 6h10v1H1zM2 7h8v1H2zM3 8h6v1H3zM4 9h4v1H4zM5 10h2v1H5z"/></symbol>
+    </svg>
+
+    <!-- ===== Barra de estado (navegación fija) ===== -->
+    <header class="statusbar" data-statusbar>
+        <div class="container statusbar__inner">
+            <a class="brand" href="#inicio" data-nav-link data-tooltip="Ir al inicio (1)" data-tooltip-pos="bottom-start">
+                <span class="brand__badge" aria-hidden="true">JC</span>
+                <span class="brand__name">Juan Chanatasig</span>
+            </a>
+
+            <p class="statusbar__current">
+                <span class="sr-only">Sección actual:</span>
+                <span class="statusbar__cursor" aria-hidden="true">▸</span>
+                <span data-current-section>Inicio</span>
+            </p>
+
+            <nav class="menu" id="menu" aria-label="Secciones del CV" data-menu>
+                <ul class="menu__list" role="list">
+                    <li><a class="menu__link" href="#perfil" data-nav-link>Perfil</a></li>
+                    <li><a class="menu__link" href="#habilidades" data-nav-link>Habilidades</a></li>
+                    <li><a class="menu__link" href="#proyectos" data-nav-link>Proyectos</a></li>
+                    <li><a class="menu__link" href="#educacion" data-nav-link>Educación</a></li>
+                    <li><a class="menu__link" href="#idiomas" data-nav-link>Idiomas</a></li>
+                </ul>
+                <!-- En teléfonos la ayuda vive dentro del menú para liberar la barra -->
+                <button class="btn btn--ghost menu__help" type="button" data-dialog-open="help-dialog">
+                    <svg class="icon" aria-hidden="true"><use href="#i-help"/></svg>
+                    Ayuda y atajos
+                </button>
+            </nav>
+
+            <div class="statusbar__actions">
+                <button class="btn btn--icon btn--ghost statusbar__help" type="button" data-dialog-open="help-dialog" aria-label="Ayuda y atajos de teclado" data-tooltip="Ayuda (?)" data-tooltip-pos="bottom">
+                    <svg class="icon" aria-hidden="true"><use href="#i-help"/></svg>
+                </button>
+
+                <button class="theme-switch" type="button" role="switch" aria-checked="false" aria-label="Modo oscuro" data-theme-toggle data-tooltip="Cambiar tema (T)" data-tooltip-pos="bottom">
+                    <span class="theme-switch__track" aria-hidden="true">
+                        <span class="theme-switch__thumb">
+                            <svg class="icon theme-switch__icon theme-switch__icon--light"><use href="#i-sun"/></svg>
+                            <svg class="icon theme-switch__icon theme-switch__icon--dark"><use href="#i-moon"/></svg>
+                        </span>
+                    </span>
+                </button>
+
+                <a class="btn btn--primary" href="resources/CV_Juan_Chanatasig.pdf" download="CV_Juan_Chanatasig.pdf" type="application/pdf" data-download-cv data-tooltip="Descargar PDF (D)" data-tooltip-pos="bottom">
+                    <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
+                    <span class="btn__label">Descargar CV</span>
+                </a>
+
+                <button class="btn btn--icon btn--ghost menu-toggle" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú de secciones" data-menu-toggle>
+                    <svg class="icon menu-toggle__open" aria-hidden="true"><use href="#i-menu"/></svg>
+                    <svg class="icon menu-toggle__close" aria-hidden="true"><use href="#i-close"/></svg>
+                </button>
+            </div>
+        </div>
+        <div class="statusbar__progress" aria-hidden="true"><span class="statusbar__progress-fill" data-scroll-progress></span></div>
+    </header>
+
+    <main id="contenido" tabindex="-1">
+        <!-- ===== 00 · Inicio: identidad + contacto (visible desde el primer segundo) ===== -->
+        <section class="hero" id="inicio" data-section="Inicio" aria-labelledby="hero-title">
+            <div class="container">
+                <article class="card hero__card reveal">
+                    <div class="avatar" data-avatar>
+                        <div class="avatar__frame">
+                            <div class="avatar__photo">
+                                <img class="avatar__img" src="resources/img/foto-perfil.jpeg" alt="Fotografía de Juan Francisco Chanatasig Garzón" width="1264" height="1599" fetchpriority="high">
+                                <span class="avatar__fallback" aria-hidden="true">JC</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero__body">
+                        <p class="status-badge">
+                            <span class="status-badge__dot" aria-hidden="true"></span>
+                            Disponible para pasantías
+                        </p>
+                        <h1 class="hero__title" id="hero-title">Juan Francisco <span class="hero__title-line">Chanatasig Garzón</span></h1>
+                        <p class="hero__role">Estudiante de Ingeniería en Software · <strong>Desarrollo Web Full-Stack</strong></p>
+
+                        <ul class="contact-list" role="list" aria-label="Información de contacto">
+                            <li class="contact-item">
+                                <svg class="icon contact-item__icon" aria-hidden="true"><use href="#i-pin"/></svg>
+                                <div class="contact-item__text">
+                                    <span class="contact-item__label">Ubicación</span>
+                                    <span class="contact-item__value">Quito, Ecuador</span>
+                                </div>
+                            </li>
+                            <li class="contact-item">
+                                <svg class="icon contact-item__icon" aria-hidden="true"><use href="#i-phone"/></svg>
+                                <div class="contact-item__text">
+                                    <span class="contact-item__label">Teléfono</span>
+                                    <a class="contact-item__value link" href="tel:+59396362179">+593 96362179</a>
+                                </div>
+                                <button class="btn btn--icon btn--ghost btn--sm" type="button" data-copy="+593 96362179" data-copy-name="Teléfono" aria-label="Copiar teléfono" data-tooltip="Copiar teléfono">
+                                    <svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg>
+                                </button>
+                            </li>
+                            <li class="contact-item">
+                                <svg class="icon contact-item__icon" aria-hidden="true"><use href="#i-mail"/></svg>
+                                <div class="contact-item__text">
+                                    <span class="contact-item__label">Correo</span>
+                                    <a class="contact-item__value link" href="mailto:jfchanatasig1405@gmail.com">jfchanatasig1405<wbr>@gmail.com</a>
+                                </div>
+                                <button class="btn btn--icon btn--ghost btn--sm" type="button" data-copy="jfchanatasig1405@gmail.com" data-copy-name="Correo" aria-label="Copiar correo" data-tooltip="Copiar correo">
+                                    <svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg>
+                                </button>
+                            </li>
+                            <li class="contact-item">
+                                <svg class="icon contact-item__icon" aria-hidden="true"><use href="#i-linkedin"/></svg>
+                                <div class="contact-item__text">
+                                    <span class="contact-item__label">LinkedIn</span>
+                                    <a class="contact-item__value link" href="https://www.linkedin.com/in/juan-francisco-chanatasig-garz%C3%B3n-63aa9b37b" target="_blank" rel="noopener noreferrer" data-external>
+                                        in/juan-francisco-chanatasig-garzón
+                                        <span class="sr-only">(se abre en una pestaña nueva)</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="contact-item">
+                                <svg class="icon contact-item__icon" aria-hidden="true"><use href="#i-github"/></svg>
+                                <div class="contact-item__text">
+                                    <span class="contact-item__label">GitHub</span>
+                                    <a class="contact-item__value link" href="https://github.com/JFranGar" target="_blank" rel="noopener noreferrer" data-external>
+                                        github.com/JFranGar
+                                        <span class="sr-only">(se abre en una pestaña nueva)</span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="btn-group">
+                            <a class="btn btn--primary" href="resources/CV_Juan_Chanatasig.pdf" download="CV_Juan_Chanatasig.pdf" type="application/pdf" data-download-cv>
+                                <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
+                                Descargar CV (PDF)
+                            </a>
+                            <a class="btn btn--secondary" href="mailto:jfchanatasig1405@gmail.com?subject=Oportunidad%20de%20pasant%C3%ADa">
+                                <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+                                Enviar correo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===== 01 · Perfil ===== -->
+        <section class="section" id="perfil" data-section="Perfil" aria-labelledby="perfil-title">
+            <div class="container">
+                <header class="section__header reveal">
+                    <span class="section__index" aria-hidden="true">01</span>
+                    <h2 class="section__title" id="perfil-title">
+                        <svg class="icon" aria-hidden="true"><use href="#i-user"/></svg>
+                        Perfil profesional
+                    </h2>
+                </header>
+
+                <div class="grid grid--profile">
+                    <article class="card reveal">
+                        <p class="lead">
+                            Estudiante de sexto nivel de <strong>Ingeniería en Software</strong> en la Escuela Politécnica Nacional (Quito).
+                            Orientado al <strong>desarrollo web en Java</strong>, con sólidos conocimientos en bases de datos relacionales
+                            y control de versiones con Git en proyectos colaborativos.
+                        </p>
+                        <p>
+                            Busco una <strong>pasantía</strong> donde aportar a sistemas, aplicar buenas prácticas de desarrollo
+                            y crecer en un entorno innovador y responsable.
+                        </p>
+                    </article>
+
+                    <aside class="card card--muted reveal" aria-labelledby="facts-title">
+                        <h3 class="card__title" id="facts-title">Resumen rápido</h3>
+                        <dl class="facts">
+                            <div class="facts__row">
+                                <dt>Objetivo</dt>
+                                <dd>Pasantía en desarrollo de software</dd>
+                            </div>
+                            <div class="facts__row">
+                                <dt>Enfoque</dt>
+                                <dd>Web full-stack · Java</dd>
+                            </div>
+                            <div class="facts__row">
+                                <dt>Formación</dt>
+                                <dd>Ing. en Software · EPN</dd>
+                            </div>
+                            <div class="facts__row">
+                                <dt>Ubicación</dt>
+                                <dd>Quito, Ecuador</dd>
+                            </div>
+                        </dl>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 02 · Habilidades ===== -->
+        <section class="section section--alt" id="habilidades" data-section="Habilidades" aria-labelledby="habilidades-title">
+            <div class="container">
+                <header class="section__header reveal">
+                    <span class="section__index" aria-hidden="true">02</span>
+                    <h2 class="section__title" id="habilidades-title">
+                        <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
+                        Habilidades técnicas
+                    </h2>
+                </header>
+
+                <div class="grid grid--cards">
+                    <article class="card reveal">
+                        <header class="card__header">
+                            <span class="card__icon" aria-hidden="true"><svg class="icon"><use href="#i-monitor"/></svg></span>
+                            <h3 class="card__title">Frontend</h3>
+                        </header>
+                        <ul class="chip-list" role="list">
+                            <li class="chip">React</li>
+                            <li class="chip">JavaScript (ES6+)</li>
+                            <li class="chip">HTML5</li>
+                            <li class="chip">CSS3</li>
+                        </ul>
+                    </article>
+
+                    <article class="card reveal">
+                        <header class="card__header">
+                            <span class="card__icon" aria-hidden="true"><svg class="icon"><use href="#i-server"/></svg></span>
+                            <h3 class="card__title">Backend</h3>
+                        </header>
+                        <ul class="chip-list" role="list">
+                            <li class="chip">Java (Spring Boot)</li>
+                            <li class="chip">C++</li>
+                            <li class="chip">Python</li>
+                        </ul>
+                    </article>
+
+                    <article class="card reveal">
+                        <header class="card__header">
+                            <span class="card__icon" aria-hidden="true"><svg class="icon"><use href="#i-database"/></svg></span>
+                            <h3 class="card__title">Bases de datos</h3>
+                        </header>
+                        <ul class="chip-list" role="list">
+                            <li class="chip">PostgreSQL</li>
+                            <li class="chip">MySQL</li>
+                            <li class="chip">SQL Server</li>
+                            <li class="chip">Oracle</li>
+                        </ul>
+                    </article>
+
+                    <article class="card reveal">
+                        <header class="card__header">
+                            <span class="card__icon" aria-hidden="true"><svg class="icon"><use href="#i-branch"/></svg></span>
+                            <h3 class="card__title">Control de versiones y DevOps</h3>
+                        </header>
+                        <ul class="chip-list" role="list">
+                            <li class="chip">Git</li>
+                            <li class="chip">GitHub</li>
+                            <li class="chip">Docker</li>
+                            <li class="chip">Nociones de CI/CD</li>
+                            <li class="chip">Scrum (ágil)</li>
+                        </ul>
+                    </article>
+
+                    <article class="card reveal">
+                        <header class="card__header">
+                            <span class="card__icon" aria-hidden="true"><svg class="icon"><use href="#i-people"/></svg></span>
+                            <h3 class="card__title">Competencias</h3>
+                        </header>
+                        <ul class="chip-list" role="list">
+                            <li class="chip">Trabajo en equipo</li>
+                            <li class="chip">Comunicación clara</li>
+                            <li class="chip">Resolución de problemas</li>
+                            <li class="chip">Atención al detalle</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 03 · Proyectos ===== -->
+        <section class="section" id="proyectos" data-section="Proyectos" aria-labelledby="proyectos-title">
+            <div class="container">
+                <header class="section__header reveal">
+                    <span class="section__index" aria-hidden="true">03</span>
+                    <h2 class="section__title" id="proyectos-title">
+                        <svg class="icon" aria-hidden="true"><use href="#i-folder"/></svg>
+                        Proyectos destacados
+                    </h2>
+                </header>
+
+                <div class="grid grid--cards grid--wide">
+                    <article class="card reveal">
+                        <header class="card__header">
+                            <span class="card__icon" aria-hidden="true"><svg class="icon"><use href="#i-code"/></svg></span>
+                            <h3 class="card__title">Catálogo de Libros, Mangas y Cómics</h3>
+                        </header>
+                        <ul class="chip-list" role="list" aria-label="Tecnologías">
+                            <li class="chip chip--accent">Java</li>
+                            <li class="chip chip--accent">Spring Boot</li>
+                            <li class="chip chip--accent">API REST</li>
+                        </ul>
+                        <ul class="pixel-list">
+                            <li>Desarrollé una aplicación web full-stack para la gestión y consulta de un catálogo de libros, mangas y cómics.</li>
+                            <li>Construí el backend con Java y Spring Boot (API REST) y la interfaz en HTML, CSS y JavaScript conectada a una base de datos relacional.</li>
+                            <li>Apliqué control de versiones con Git en un flujo de trabajo colaborativo en equipo.</li>
+                        </ul>
+                    </article>
+
+                    <article class="card reveal">
+                        <header class="card__header">
+                            <span class="card__icon" aria-hidden="true"><svg class="icon"><use href="#i-cube"/></svg></span>
+                            <h3 class="card__title">CarShowroom · Industria 4.0</h3>
+                        </header>
+                        <ul class="chip-list" role="list" aria-label="Tecnologías">
+                            <li class="chip chip--accent">C++</li>
+                            <li class="chip chip--accent">OpenGL</li>
+                            <li class="chip chip--accent">Gráficos 3D</li>
+                        </ul>
+                        <ul class="pixel-list">
+                            <li>Diseñé e implementé una aplicación de computación gráfica en C++ con OpenGL para la visualización realista de vehículos en 3D.</li>
+                            <li>Trabajé el renderizado, la iluminación y la manipulación de modelos para lograr una experiencia visual de alta fidelidad.</li>
+                        </ul>
+                    </article>
+
+                    <article class="card reveal">
+                        <header class="card__header">
+                            <span class="card__icon" aria-hidden="true"><svg class="icon"><use href="#i-heart"/></svg></span>
+                            <h3 class="card__title">Proyecto de Inclusión Digital</h3>
+                        </header>
+                        <ul class="chip-list" role="list" aria-label="Categoría">
+                            <li class="chip chip--accent">Responsabilidad social</li>
+                        </ul>
+                        <ul class="pixel-list">
+                            <li>Colaboré en una iniciativa de inclusión digital capacitando a una persona adulta mayor en el uso básico de la computadora.</li>
+                            <li>Fortalecí habilidades de comunicación clara, paciencia y enseñanza adaptada a distintos niveles de conocimiento.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 04 · Educación ===== -->
+        <section class="section section--alt" id="educacion" data-section="Educación" aria-labelledby="educacion-title">
+            <div class="container">
+                <header class="section__header reveal">
+                    <span class="section__index" aria-hidden="true">04</span>
+                    <h2 class="section__title" id="educacion-title">
+                        <svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg>
+                        Educación
+                    </h2>
+                </header>
+
+                <ol class="timeline" role="list">
+                    <li class="timeline__item reveal">
+                        <article class="card">
+                            <p class="timeline__date">
+                                <time datetime="2021">2021</time> — Actualidad
+                                <span class="chip chip--status">En curso</span>
+                            </p>
+                            <h3 class="card__title">Ingeniería en Software</h3>
+                            <p class="card__subtitle">Escuela Politécnica Nacional (EPN) · Facultad de Ingeniería en Sistemas</p>
+                            <p class="card__meta">Quito, Ecuador · Cursando últimos niveles</p>
+                        </article>
+                    </li>
+                    <li class="timeline__item reveal">
+                        <article class="card">
+                            <p class="timeline__date"><time datetime="2016">2016</time> — <time datetime="2021">2021</time></p>
+                            <h3 class="card__title">Bachiller en Ciencias</h3>
+                            <p class="card__subtitle">Unidad Educativa San José La Salle</p>
+                            <p class="card__meta">Latacunga, Ecuador</p>
+                        </article>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ===== 05 · Idiomas ===== -->
+        <section class="section" id="idiomas" data-section="Idiomas" aria-labelledby="idiomas-title">
+            <div class="container">
+                <header class="section__header reveal">
+                    <span class="section__index" aria-hidden="true">05</span>
+                    <h2 class="section__title" id="idiomas-title">
+                        <svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg>
+                        Idiomas
+                    </h2>
+                </header>
+
+                <div class="grid grid--cards">
+                    <article class="card reveal">
+                        <header class="card__header">
+                            <span class="card__icon" aria-hidden="true"><svg class="icon"><use href="#i-globe"/></svg></span>
+                            <h3 class="card__title">Español</h3>
+                        </header>
+                        <div class="meter" style="--level: 5" role="img" aria-label="Nivel nativo: 5 de 5"></div>
+                        <p class="meter__caption">Nativo</p>
+                    </article>
+
+                    <article class="card reveal">
+                        <header class="card__header">
+                            <span class="card__icon" aria-hidden="true"><svg class="icon"><use href="#i-globe"/></svg></span>
+                            <h3 class="card__title">Inglés</h3>
+                        </header>
+                        <div class="meter" style="--level: 3" role="img" aria-label="Nivel intermedio: 3 de 5"></div>
+                        <p class="meter__caption">Intermedio</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== Pie: llamada a la acción final ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="card footer__card reveal">
+                <div>
+                    <h2 class="footer__title">¿Conversamos?</h2>
+                    <p>Estoy disponible para una pasantía en desarrollo de software. Escríbeme y coordinamos una entrevista.</p>
+                </div>
+                <div class="btn-group">
+                    <a class="btn btn--primary" href="mailto:jfchanatasig1405@gmail.com?subject=Oportunidad%20de%20pasant%C3%ADa">
+                        <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+                        Escribir un correo
+                    </a>
+                    <a class="btn btn--secondary" href="resources/CV_Juan%20Chanatasig.pdf" download="CV_Juan_Chanatasig.pdf" type="application/pdf" data-download-cv>
+                        <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
+                        Descargar CV
+                    </a>
+                </div>
+            </div>
+            <p class="footer__copy">© 2026 Juan Francisco Chanatasig Garzón · Quito, Ecuador</p>
+        </div>
+    </footer>
+
+    <!-- ===== Utilidades flotantes ===== -->
+    <button class="btn btn--icon btn--secondary back-to-top" type="button" aria-label="Volver arriba" data-back-to-top data-tooltip="Volver arriba" data-tooltip-pos="left">
+        <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg>
+    </button>
+
+    <div class="toast" role="status" aria-live="polite" aria-atomic="true" data-toast>
+        <svg class="icon toast__icon" aria-hidden="true"><use href="#i-check" data-toast-icon/></svg>
+        <span data-toast-message></span>
+    </div>
+
+    <!-- ===== Diálogo: ayuda y atajos ===== -->
+    <dialog class="dialog" id="help-dialog" aria-labelledby="help-title">
+        <div class="card dialog__panel">
+            <header class="dialog__header">
+                <h2 class="dialog__title" id="help-title">
+                    <svg class="icon" aria-hidden="true"><use href="#i-help"/></svg>
+                    Guía rápida
+                </h2>
+                <button class="btn btn--icon btn--ghost" type="button" data-dialog-close aria-label="Cerrar guía" data-tooltip="Cerrar (Esc)" data-tooltip-pos="left">
+                    <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
+                </button>
+            </header>
+            <div class="dialog__body">
+                <p>Usa la barra superior para saltar entre secciones. La sección en la que estás se resalta y su nombre aparece en la barra.</p>
+                <h3 class="dialog__subtitle">Atajos de teclado</h3>
+                <dl class="shortcuts">
+                    <div class="shortcuts__row"><dt><kbd>1</kbd> – <kbd>6</kbd></dt><dd>Ir a una sección (Inicio, Perfil, Habilidades…)</dd></div>
+                    <div class="shortcuts__row"><dt><kbd>D</kbd></dt><dd>Descargar el CV en PDF</dd></div>
+                    <div class="shortcuts__row"><dt><kbd>T</kbd></dt><dd>Cambiar entre modo claro y oscuro</dd></div>
+                    <div class="shortcuts__row"><dt><kbd>?</kbd></dt><dd>Abrir esta guía</dd></div>
+                    <div class="shortcuts__row"><dt><kbd>Esc</kbd></dt><dd>Cerrar ventanas y menús</dd></div>
+                </dl>
+                <p class="dialog__hint">
+                    <svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg>
+                    El botón de copiar junto al correo y al teléfono los guarda en tu portapapeles.
+                </p>
+            </div>
+            <footer class="dialog__footer">
+                <button class="btn btn--primary" type="button" data-dialog-close autofocus>Entendido</button>
+            </footer>
+        </div>
+    </dialog>
+
+    <!-- ===== Diálogo: errores ("Game Over") con salida rápida ===== -->
+    <dialog class="dialog dialog--error" id="gameover-dialog" aria-labelledby="gameover-title" aria-describedby="gameover-message">
+        <div class="card dialog__panel">
+            <header class="dialog__header">
+                <h2 class="dialog__title" id="gameover-title">
+                    <svg class="icon" aria-hidden="true"><use href="#i-warning"/></svg>
+                    Game Over
+                </h2>
+                <button class="btn btn--icon btn--ghost" type="button" data-dialog-close aria-label="Cerrar aviso" data-tooltip="Cerrar (Esc)" data-tooltip-pos="left">
+                    <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
+                </button>
+            </header>
+            <div class="dialog__body">
+                <p class="dialog__lead" id="gameover-message" data-gameover-message>No encontramos lo que buscabas.</p>
+                <p>Puedes continuar desde cualquiera de estas secciones:</p>
+                <ul class="chip-list" role="list" data-gameover-links></ul>
+            </div>
+            <footer class="dialog__footer">
+                <button class="btn btn--secondary" type="button" data-gameover-retry hidden>Reintentar</button>
+                <a class="btn btn--primary" href="#inicio" data-nav-link autofocus>Continuar desde el inicio</a>
+            </footer>
+        </div>
+    </dialog>
+</body>
+</html>
